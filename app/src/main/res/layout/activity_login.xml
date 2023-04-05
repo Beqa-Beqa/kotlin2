@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/circle_center"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="60dp"
+        android:src="@drawable/circle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey,\nlogin now."
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/circle_center"
+        app:layout_constraintTop_toBottomOf="@+id/circle_center"
+        android:layout_marginTop="80dp"
+        />
+    <TextView
+        android:id="@+id/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="if you are new / "
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/login_text"
+        app:layout_constraintStart_toStartOf="@id/login_text"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create new"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/small_text"
+        app:layout_constraintTop_toTopOf="@id/small_text"
+        />
+    <TextView
+        android:id="@+id/dStudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:gravity="start|center"
+        android:paddingStart="30dp"
+        android:paddingVertical="15dp"
+        android:text="Dstudio_agency"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/small_text"
+        app:layout_constraintStart_toStartOf="@id/small_text"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/orange_background"
+        android:drawableEnd="@drawable/ic_outline_bolt_24"
+        android:paddingEnd="10dp"
+        />
+    <EditText
+        android:id="@+id/password_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:gravity="start|center"
+        android:padding="10dp"
+        android:paddingStart="30dp"
+        android:hint="password"
+        android:background="@drawable/password_background"
+        app:layout_constraintTop_toBottomOf="@id/dStudio"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/passForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forgot password / "
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/password_toggle"
+        app:layout_constraintStart_toStartOf="@id/password_toggle"
+        app:layout_constraintEnd_toEndOf="@id/dStudio"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@id/passForgot"
+        app:layout_constraintTop_toTopOf="@id/passForgot"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
